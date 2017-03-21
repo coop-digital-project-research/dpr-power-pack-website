@@ -57,6 +57,7 @@ body {
   border: 2px solid $light-grey;
   border-radius: 1em;
   padding: 1em;
+  text-align: center;
   h3 {
     font-size: 2em;
     color: $dark-grey;
@@ -75,6 +76,9 @@ body {
   img {
     width: 75%;
     height: 130px;
+  }
+  p {
+    font-size: 1.25em;
   }
   background: $white;
 }
