@@ -113,6 +113,13 @@ p, h2, strong {
   }
 }
 
+div.cta {
+  p {
+    max-width: 520px;
+    margin-bottom: 0.8rem;
+  }
+}
+
 .footer {
   background: darken($dark-grey, 20);
   height: 12em;
