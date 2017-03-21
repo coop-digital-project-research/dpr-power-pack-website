@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title %></title>
+
+    <%= stylesheet_link_tag "site" %>
+    <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Quicksand" %>
+    <%= stylesheet_link_tag "https://api.tiles.mapbox.com/mapbox-gl-js/v0.33.1/mapbox-gl.css" %>
+    <%= javascript_include_tag "site" %>
+    <%= javascript_include_tag "https://api.tiles.mapbox.com/mapbox-gl-js/v0.33.1/mapbox-gl.js" %>
+  </head>
+
+  <body class="<%= page_classes %>">
+    <%= yield %>
+  </body>
+</html>

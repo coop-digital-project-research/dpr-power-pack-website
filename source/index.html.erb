@@ -1,0 +1,103 @@
+---
+title: Power Pack Sheffield
+---
+
+<div class="header">
+  <div class="container">
+    <h1 class="visually-hidden">Power Pack Sheffield</h1>
+    <%= image_tag 'power-pack-logo.svg', class: 'power-pack-logo' %>
+  </div>
+</div>
+<div class="strapline">
+  <div class="container">
+    <h2>Local, renewable power</h2>
+    <p>Electricity made by your neighbours</p>
+  </div>
+</div>
+
+<div id='map'></div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h2>Upcoming local energy events</h2>
+    </div>
+  </div>
+</div>
+
+<%= partial("event",
+  locals: {
+    external_url: "https://www.eventbrite.co.uk/e/power-pack-sheffield-trip-to-povey-farm-tickets-33014309689",
+    day: "Wednesday",
+    date: "29th March",
+    time: "11am - 1pm",
+    headline: "Visit a farm powered by renewable energy",
+    short_description: "Meet farmer Stephen Thompson and learn about the wind turbine and solar panels powering his pig farm."
+  })
+%>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h2>Power Pack connects local people with local energy</h2>
+      <p><strong>Power Pack</strong> is a new way for communities to buy renewable energy from local producers at a better price for everyone.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <div class="callout">
+        <h3 class="first">Cheaper</h3>
+        <%= image_tag 'savings.svg' %>
+        <p>10% cheaper on average</p>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="callout">
+        <h3 class="second">Greener</h3>
+        <%= image_tag 'solar.svg' %>
+        <p>Renewable energy</p>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="callout">
+        <h3 class="third">Closer to home</h3>
+        <%= image_tag 'community.svg' %>
+        <p>Benefit as a community</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <p>Power Pack will:</p>
+      <ul>
+        <li>
+          <p>buy from local renewable energy producers where we can</p>
+        </li>
+        <li>
+          <p>work out pricing that's as individual as you are</p>
+        </li>
+        <li>
+          <p>get energy at a low price, and pass that saving on</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+</div>
+
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoiaWFuZHJ5c2RhbGUiLCJhIjoiY2owY2xvdWJjMDAxaDMzbXp4cTRtMDY4cyJ9.C-j6LkLP4yyH8OqCieSdfA';
+  var map = new mapboxgl.Map({
+      container: 'map', // container id
+      style: 'mapbox://styles/mapbox/streets-v9', //stylesheet location
+      center: [-1.47, 53.37], // starting position
+      zoom: 11 // starting zoom
+  });
+
+  map.scrollZoom.disable();
+</script>
