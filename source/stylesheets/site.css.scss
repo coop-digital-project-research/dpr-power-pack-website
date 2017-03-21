@@ -8,10 +8,6 @@ $light-grey: #F3F3F3;
 $dark-grey: #736F66;
 $white: #FFFFFF;
 
-body {
-  font-family: 'Quicksand', sans-serif;
-}
-
 .header {
   background: $blue;
   padding: 2em 0;
@@ -102,7 +98,7 @@ p, h2, strong {
   padding: 1em;
   h3 {
     color: $pink;
-    font-size: 2em;
+    font-size: 1.9em;
     margin: 0;
   }
   h3.date {
@@ -120,4 +116,8 @@ p, h2, strong {
   background: darken($dark-grey, 20);
   height: 12em;
   margin-top: 6em;
+}
+
+.about {
+  margin-top: 4em;
 }
