@@ -54,6 +54,7 @@ $white: #FFFFFF;
   border-radius: 1em;
   padding: 1em;
   text-align: center;
+  margin: 2rem 0;
   h3 {
     font-size: 2em;
     color: $dark-grey;
@@ -116,6 +117,14 @@ p, h2, strong {
   background: darken($dark-grey, 20);
   height: 12em;
   margin-top: 6em;
+  padding: 1rem 0;
+  p {
+    color: $light-grey; 
+  }
+  img {
+    width: 48px;
+    float: right;
+  }
 }
 
 .about {
