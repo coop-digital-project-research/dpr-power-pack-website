@@ -8,6 +8,10 @@ $light-grey: #F3F3F3;
 $dark-grey: #736F66;
 $white: #FFFFFF;
 
+h1, h2 {
+  line-height: 1;
+}
+
 .header {
   background: $blue;
   padding: 2em 0;
@@ -146,9 +150,8 @@ div.cta {
 }
 
 .signup {
-  background: darken($blue, 10);
+  background: $blue;
   margin-top: 4rem;
-  padding: 4rem 0;
   color: $white;
   .indicates-required {
     margin-bottom: 1rem;
@@ -193,6 +196,14 @@ div.cta {
     cursor: pointer;
     &:hover {
       background: darken($pink, 10);
+    }
+  }
+  .container {
+    padding: 4rem 0;
+    @media screen and (min-width: 768px) {
+      background: $blue no-repeat url(../images/turbine.svg);
+      background-position: right bottom;
+      background-size: 45%;
     }
   }
 }
