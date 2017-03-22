@@ -145,11 +145,62 @@ div.cta {
   }
 }
 
+.signup {
+  background: darken($blue, 10);
+  margin-top: 4rem;
+  padding: 4rem 0;
+  color: $white;
+  .indicates-required {
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    span {
+    }
+  }
+  h1, h2, span, label, .indicates-required, .indicates-required span {
+    color: $white;
+  }
+  h1, h2 {
+    margin-top: 0;
+  }
+  label {
+    display: block;
+    font-size: 1.4rem;
+  }
+  input {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    padding: 0.8rem;
+    font-family: $font-family;
+    border-radius: 0.2rem;
+    outline: 0;
+    border: 0;
+    @media screen and (min-width: 768px) {
+      width: 50%;
+    }
+    &[name="MMERGE3"] {
+      width: auto;
+      text-transform: uppercase;
+    }
+  }
+  input[type='submit'] {
+    width: auto;
+    background: $pink;
+    border: none;
+    outline: 0;
+    padding: 1rem 2rem;
+    border-radius: 0.4rem;
+    color: $white;
+    cursor: pointer;
+    &:hover {
+      background: darken($pink, 10);
+    }
+  }
+}
+
 .footer {
   background: darken($dark-grey, 20);
   height: 12em;
-  margin-top: 6em;
-  padding: 1rem 0;
+  padding: 4rem 0;
   p {
     color: $light-grey;
     a {
