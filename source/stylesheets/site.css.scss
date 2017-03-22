@@ -132,6 +132,10 @@ p, h2, strong {
   &:hover {
     background: $light-grey;
   }
+  p.link {
+    text-decoration: underline;
+    color: $blue;
+  }
 }
 
 .footer {
