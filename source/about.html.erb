@@ -8,14 +8,6 @@ title: Power Pack Sheffield
     <%= image_tag 'power-pack-logo.svg', class: 'power-pack-logo' %>
   </div>
 </div>
-<div class="strapline">
-  <div class="container">
-    <h2>Local, renewable power</h2>
-    <p>Electricity made by your neighbours</p>
-  </div>
-</div>
-
-<div id='map'></div>
 
 <div class="container about">
   <div class="row">
@@ -33,26 +25,71 @@ title: Power Pack Sheffield
       <p>
         Power Pack is inspired by Energy Local's work at <a href="http://www.energylocal.co.uk/cydynni-the-guide/">Bethesda</a> and <a href="http://www.energylocal.co.uk/projectswell/">Shrivenham</a>.
       </p>
-
-      <h2>Meet the team</h2>
-      <p>
-        <a href="https://twitter.com/paul_furley">Paul Furley</a>
-      </p>
-      <p>
-        <a href="https://twitter.com/idrysdale">Ian Drysdale</a>
-      </p>
-      <p>
-        <a href="https://twitter.com/hmurray99">Helen Murray</a>
-      </p>
-      <p>
-        <a href="https://twitter.com/jamesarice">James Rice</a>
-      </p>
-      <p>
-        <a href="https://twitter.com/sophycolbert">Sophy Colbert</a>
-      </p>
-
-
     </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h2>Meet the team</h2>
+    </div>
+  </div>
+</div>
+
+<div class="container team-container">
+
+  <%= partial(
+    "team_member",
+    locals: {
+      name: "Sophy",
+      role: "Content",
+      image: "sophy.jpg",
+      link_to: "https://twitter.com/sophycolbert"
+    })
+  %>
+
+  <%= partial(
+    "team_member",
+    locals: {
+      name: "Ian",
+      role: "Product",
+      image: "ian.jpg",
+      link_to: "https://twitter.com/idrysdale"
+    })
+  %>
+
+  <%= partial(
+    "team_member",
+    locals: {
+      name: "Paul",
+      role: "Engineering",
+      image: "paul.jpg",
+      link_to: "https://twitter.com/paul_furley"
+    })
+  %>
+
+
+  <%= partial(
+    "team_member",
+    locals: {
+      name: "James",
+      role: "Design",
+      image: "james.jpg",
+      link_to: "https://twitter.com/jamesarice"
+    })
+  %>
+
+  <%= partial(
+    "team_member",
+    locals: {
+      name: "Helen",
+      role: "Delivery",
+      image: "helen.jpg",
+      link_to: "https://twitter.com/hmurray99"
+    })
+  %>
+
   </div>
 </div>
 

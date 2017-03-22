@@ -242,5 +242,9 @@ img.team-face-image {
 
 .team-member {
   padding: 1em;
-
+  display: block;
+  text-decoration: none;
+  &:hover {
+    background: $light-grey;
+  }
 }
