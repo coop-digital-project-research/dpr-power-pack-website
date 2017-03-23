@@ -7,7 +7,15 @@ title: Power Pack Sheffield
     <div class="row">
       <div class="col-12">
         <h1 class="visually-hidden">Power Pack Sheffield</h1>
-        <%= image_tag 'power-pack-logo.svg', class: 'power-pack-logo' %>
+        <a href="..">
+          <%= image_tag 'power-pack-logo.svg', class: 'power-pack-logo' %>
+        </a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="about">About</a></li>
+            <li><a href="how-it-works">How it works</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
   </div>
@@ -15,7 +23,7 @@ title: Power Pack Sheffield
 
 <div class="container about">
   <div class="row">
-    <div class="col-12">
+    <div class="col-8">
       <h2>Power Pack brings local renewable energy producers and consumers together</h2>
       <p><strong>Power Pack</strong> is a new way for communities to buy renewable energy from local producers at a better price for everyone.</p>
       <p>
@@ -34,19 +42,24 @@ title: Power Pack Sheffield
         A commitment to Power Pack will lead to a whole new way to generate and sell electricity in the UK.
       </p>
 
-
-    </div>
-  </div>
-</div>
-
-  <div class="row">
-    <div class="col-12">
       <p>
         Join Power Pack Sheffield and get more of your electricity from local renewable sources.
       </p>
       <p>
         When it's available, you'll use electricity from local wind turbines and solar panels - at a better price for everyone.
       </p>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="signup">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <%= partial('partials/signup') %>
+      </div>
     </div>
   </div>
 </div>

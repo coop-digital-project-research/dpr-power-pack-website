@@ -7,7 +7,15 @@ title: Power Pack Sheffield
     <div class="row">
       <div class="col-12">
         <h1 class="visually-hidden">Power Pack Sheffield</h1>
-        <%= image_tag 'power-pack-logo.svg', class: 'power-pack-logo' %>
+        <a href="..">
+          <%= image_tag 'power-pack-logo.svg', class: 'power-pack-logo' %>
+        </a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="about">About</a></li>
+            <li><a href="how-it-works">How it works</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
   </div>
@@ -15,7 +23,7 @@ title: Power Pack Sheffield
 
 <div class="container about">
   <div class="row">
-    <div class="col-12">
+    <div class="col-8">
       <h2>Brought to you by Co-op Digital</h2>
       <p>
         We are the digital product research team at Co-op Digital in Manchester.
@@ -94,6 +102,16 @@ title: Power Pack Sheffield
     })
   %>
 
+  </div>
+</div>
+
+<div class="signup">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <%= partial('partials/signup') %>
+      </div>
+    </div>
   </div>
 </div>
 
