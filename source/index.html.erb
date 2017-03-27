@@ -29,6 +29,10 @@ title: Power Pack <%= location_name %>
   </div>
 </div>
 
+<form id="place-form">
+    <input type="text" id="place-input">
+</form>
+
 <div id='map'></div>
 
 <div class="container">
@@ -142,6 +146,26 @@ title: Power Pack <%= location_name %>
   });
 
   map.scrollZoom.disable();
+</script>
+
+<script>
+  var place_lookup = new Object();
+  <% data.places.locations.each do |pack|  %>
+      place_lookup["<%= pack[3] %>"] = "./<%= pack[0] %>.html";
+  <% end %>
+  $(function() {
+    $("#place-form").submit(function() {
+      var postcode = $("#place-input").val();
+      console.log('postcode', postcode);
+
+      $.each(place_lookup, function(fragment, dest) {
+        if(postcode.startsWith(fragment)) {
+          window.location.href = dest;
+        }
+      });
+      return false;
+    });
+  });
 </script>
 
 <script type="text/javascript">
