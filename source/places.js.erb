@@ -1,0 +1,21 @@
+var place_lookup = new Object();
+
+<% data.places.locations.each do |pack|  %>
+    place_lookup["<%= pack[0] %>"] = "./<%= pack[3] %>.html";
+<% end %>
+
+$(function() {
+  $("#place-form").submit(function() {
+    var postcode = $("#place-input").val();
+    console.log('postcode', postcode);
+
+    $.each(place_lookup, function(fragment, dest) {
+      if(postcode.toUpperCase().startsWith(fragment)) {
+        window.location.href = dest;
+        return;
+      }
+    });
+
+    return false;
+  });
+});
