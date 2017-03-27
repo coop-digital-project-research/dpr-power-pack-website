@@ -105,9 +105,26 @@ h1, h2 {
   height: 200px;
   @media screen and (min-width: 768px) {
     height: 300px;
-    margin-bottom: 2rem;
   }
 }
+
+.map-find {
+  box-sizing: border-box;
+  height: 200px;
+  margin-top: -200px;
+  @media screen and (min-width: 768px) {
+    height: 300px;
+    margin-top: -300px;
+  }
+  margin-top: 0;
+  > div > div > div {
+    margin-top: 50px;
+    height: 200px;
+    background: $white;
+  }
+}
+
+
 
 .callout {
   border: 2px solid $light-grey;

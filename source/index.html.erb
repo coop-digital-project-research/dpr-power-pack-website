@@ -29,12 +29,16 @@ title: Power Pack Sheffield
   </div>
 </div>
 
-<div class="container">
+<div id='map'></div>
+
+<div class="container map-find">
   <div class="row">
-    <div class="col-12">
-      <h1>Find your local Pack</h1>
-      Enter your postcode
-      <input></input>
+    <div class="col-8">
+      <div>
+        <h1>Find your local Pack</h1>
+        Enter your postcode
+        <input></input>
+      </div>
     </div>
   </div>
 </div>
@@ -104,7 +108,7 @@ title: Power Pack Sheffield
       container: 'map', // container id
       style: 'mapbox://styles/mapbox/streets-v9', //stylesheet location
       center: [-1.47, 53.37], // starting position
-      zoom: 11 // starting zoom
+      zoom: 8 // starting zoom
   });
 
   map.scrollZoom.disable();
