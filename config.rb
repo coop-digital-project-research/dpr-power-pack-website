@@ -15,6 +15,9 @@ page '/*.txt', layout: false
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
 #  which_fake_page: "Rendering a fake page with a local variable" }
+data.places.locations.each do |name|
+      proxy "/#{name}.html", "/index.html", :locals => { :location_name => name }
+end
 
 # General configuration
 
