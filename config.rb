@@ -15,6 +15,12 @@ page '/*.txt', layout: false
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
 #  which_fake_page: "Rendering a fake page with a local variable" }
+data.places.locations.each do |pack|
+  name = pack[0]
+  lat = pack[1]
+  lon = pack[2]
+  proxy "/#{name}.html", "/placeName.html", :locals => { :location_name => name, :lat => lat, :lon => lon }
+end
 
 # General configuration
 

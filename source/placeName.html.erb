@@ -1,16 +1,16 @@
 ---
-title: Power Pack [placeName]
+title: Power Pack <%= location_name %>
 ---
 
 <div class="header">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h1 class="visually-hidden">Power Pack [placeName]</h1>
+        <h1 class="visually-hidden">Power Pack <%= location_name %></h1>
         <a href="/">
         <%= image_tag 'power-pack-logo.svg', class: 'power-pack-logo' %>
         </a>
-        <span class="pack-name">[placeName]</span>
+        <span class="pack-name"><%= location_name %></span>
         <nav class="main-nav">
           <ul>
             <li><a href="about">About</a></li>
@@ -37,7 +37,7 @@ title: Power Pack [placeName]
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h1>Join [placeName] Power Pack</h1>
+        <h1>Join <%= location_name %> Power Pack</h1>
         
           <!-- Begin MailChimp Signup Form -->
           <div id="mc_embed_signup">
@@ -63,7 +63,7 @@ title: Power Pack [placeName]
             </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
               <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_17e6658e691ff88665ad7392e_922aa303dd" tabindex="-1" value=""></div>
 
-              <input type="hidden" name="SIGNUP" id="SIGNUP" value="[placeName]" />
+              <input type="hidden" name="SIGNUP" id="SIGNUP" value="<%= location_name %>" />
 
               <div class="clear"><input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
               </div>
@@ -95,7 +95,7 @@ title: Power Pack [placeName]
   var map = new mapboxgl.Map({
       container: 'map', // container id
       style: 'mapbox://styles/mapbox/streets-v9', //stylesheet location
-      center: [-1.47, 53.37], // starting position
+      center: [<%= lon %>, <%= lat %>], // starting position
       zoom: 11 // starting zoom
   });
 
