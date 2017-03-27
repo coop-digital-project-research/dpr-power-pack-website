@@ -44,6 +44,42 @@ h1, h2 {
   line-height: 1.2;
 }
 
+
+label {
+  display: block;
+  font-size: 1.4rem;
+}
+input {
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  font-family: $font-family;
+  border-radius: 0.2rem;
+  outline: 0;
+  border: 1px solid $blue;
+  @media screen and (min-width: 768px) {
+    font-size: 2rem;
+    width: 50%;
+  }
+  &[name="MMERGE3"] {
+    width: auto;
+    text-transform: uppercase;
+  }
+}
+input[type='submit'] {
+  width: auto;
+  background: $pink;
+  border: none;
+  outline: 0;
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  color: $white;
+  cursor: pointer;
+  &:hover {
+    background: darken($pink, 10);
+  }
+}
+
+
 .header {
   background: $blue;
   padding: 2em 0;
@@ -105,6 +141,9 @@ h1, h2 {
   height: 200px;
   @media screen and (min-width: 768px) {
     height: 300px;
+    &.map-large {
+      height: 500px;
+    }
   }
 }
 
@@ -117,14 +156,35 @@ h1, h2 {
     margin-top: -300px;
   }
   margin-top: 0;
+  &.map-large {
+    height: 500px;
+    margin-top: -500px;
+  }
+  input#place-input {
+    text-transform: uppercase;
+  }
   > div > div > div {
+    h1 {
+      color: $dark-grey;
+      
+    }
     margin-top: 50px;
-    height: 200px;
     background: $white;
+    border-radius: 0.2rem;
+    @media screen and (min-width: 768px) {
+      box-sizing: border-box;
+      padding: 2rem;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
   }
 }
 
+#place-form {
 
+}
 
 .callout {
   border: 2px solid $light-grey;
@@ -226,39 +286,7 @@ div.cta {
   h1, h2 {
     margin-top: 0;
   }
-  label {
-    display: block;
-    font-size: 1.4rem;
-  }
-  input {
-    margin-bottom: 1rem;
-    padding: 0.8rem;
-    font-family: $font-family;
-    border-radius: 0.2rem;
-    outline: 0;
-    border: 1px solid $blue;
-    @media screen and (min-width: 768px) {
-      font-size: 2rem;
-      width: 50%;
-    }
-    &[name="MMERGE3"] {
-      width: auto;
-      text-transform: uppercase;
-    }
-  }
-  input[type='submit'] {
-    width: auto;
-    background: $pink;
-    border: none;
-    outline: 0;
-    padding: 1rem 2rem;
-    border-radius: 0.4rem;
-    color: $white;
-    cursor: pointer;
-    &:hover {
-      background: darken($pink, 10);
-    }
-  }
+  
   .container {
     padding: 4rem 0;
     @media screen and (min-width: 768px) {

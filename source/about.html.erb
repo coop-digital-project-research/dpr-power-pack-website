@@ -115,27 +115,4 @@ title: Power Pack Sheffield
   </div>
 </div>
 
-<div class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-8">
-        <p>Any questions? Email <a href="mailto:sophy.colbert@coop.co.uk">sophy.colbert@coop.co.uk</a></p>
-      </div>
-      <div class="col-4">
-        <%= image_tag 'coop-logo-white.svg' %>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script>
-  mapboxgl.accessToken = 'pk.eyJ1IjoiaWFuZHJ5c2RhbGUiLCJhIjoiY2owY2xvdWJjMDAxaDMzbXp4cTRtMDY4cyJ9.C-j6LkLP4yyH8OqCieSdfA';
-  var map = new mapboxgl.Map({
-      container: 'map', // container id
-      style: 'mapbox://styles/mapbox/streets-v9', //stylesheet location
-      center: [-1.47, 53.37], // starting position
-      zoom: 11 // starting zoom
-  });
-
-  map.scrollZoom.disable();
-</script>
+<%= partial('partials/footer') %>

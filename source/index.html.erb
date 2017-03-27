@@ -30,21 +30,7 @@ title: Power Pack
 </div>
 
 
-<div id='map'></div>
 
-<div class="container map-find">
-  <div class="row">
-    <div class="col-8">
-      <div>
-        <h1>Find your local Pack</h1>
-        Enter your postcode
-        <form id="place-form">
-          <input type="text" id="place-input">
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
 
 <div class="container about">
   <div class="row">
@@ -82,44 +68,21 @@ title: Power Pack
   </div>
 </div>
 
-<div class="container">
+<div id="map" class="map-large"></div>
+
+<div class="container map-find map-large">
   <div class="row">
-    <div class="col-12">
-      <h1>Find your local Pack</h1>
-      Enter your postcode
-      <input></input>
-    </div>
-  </div>
-</div>
-
-<div class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-8">
-        <p>Any questions? Email <a href="mailto:sophy.colbert@coop.co.uk">sophy.colbert@coop.co.uk</a></p>
-      </div>
-      <div class="col-4">
-        <%= image_tag 'coop-logo-white.svg' %>
+    <div class="col-8">
+      <div>
+        <h1>Find your local Pack</h1>
+        <form id="place-form">
+          <label for="place-input">Enter your postcode</label>
+          <input type="text" id="place-input">
+          <input type="submit" class="button">
+        </form>
       </div>
     </div>
   </div>
 </div>
 
-<script>
-  mapboxgl.accessToken = 'pk.eyJ1IjoiaWFuZHJ5c2RhbGUiLCJhIjoiY2owY2xvdWJjMDAxaDMzbXp4cTRtMDY4cyJ9.C-j6LkLP4yyH8OqCieSdfA';
-  var map = new mapboxgl.Map({
-      container: 'map', // container id
-      style: 'mapbox://styles/mapbox/streets-v9', //stylesheet location
-      center: [-1.47, 53.37], // starting position
-      zoom: 8 // starting zoom
-  });
-
-  map.scrollZoom.disable();
-</script>
-
-<script type="text/javascript">
-  window.Intercom("boot", {
-    app_id: "fgxz8mjd"
-  });
-
-</script>
+<%= partial('partials/footer') %>
