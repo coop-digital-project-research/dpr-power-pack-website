@@ -29,7 +29,9 @@ nav.main-nav {
       }
     }
   }
+  margin-top: 1rem;
   @media screen and (min-width: 980px) {
+    margin-top: 0;
     float: right;
     height: 4.5rem;
     ul {
@@ -45,11 +47,24 @@ h1, h2 {
 .header {
   background: $blue;
   padding: 2em 0;
+  a {
+    text-decoration: none;
+  }
+}
+.power-pack-logo {
+  vertical-align: bottom;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: auto;
+    height: 4rem;
+    margin-right: 0.6rem;
+  }
 }
 
-.power-pack-logo {
-  max-width: 30em;
-  width: 100%;
+.pack-name {
+  font-size: 2.6rem;
+  color: $white;
+  display: inline;
 }
 
 .strapline {
@@ -183,9 +198,6 @@ div.cta {
 }
 
 .signup {
-  background: $blue;
-  margin-top: 4rem;
-  color: $white;
   .indicates-required {
     margin-bottom: 1rem;
     font-size: 0.8rem;
@@ -193,7 +205,6 @@ div.cta {
     }
   }
   h1, h2, span, label, .indicates-required, .indicates-required span {
-    color: $white;
   }
   h1, h2 {
     margin-top: 0;
@@ -208,7 +219,7 @@ div.cta {
     font-family: $font-family;
     border-radius: 0.2rem;
     outline: 0;
-    border: 0;
+    border: 1px solid $blue;
     @media screen and (min-width: 768px) {
       font-size: 2rem;
       width: 50%;
@@ -234,7 +245,7 @@ div.cta {
   .container {
     padding: 4rem 0;
     @media screen and (min-width: 768px) {
-      background: $blue no-repeat url(../images/turbine.svg);
+      background: $white no-repeat url(../images/turbine.svg);
       background-position: right bottom;
       background-size: 45%;
     }
