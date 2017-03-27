@@ -1,13 +1,16 @@
 ---
-title: Power Pack
+title: Power Pack Sheffield
 ---
 
 <div class="header">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h1 class="visually-hidden">Power Pack</h1>
+        <h1 class="visually-hidden">Power Pack Sheffield</h1>
+        <a href="/">
         <%= image_tag 'power-pack-logo.svg', class: 'power-pack-logo' %>
+        </a>
+        <span class="pack-name">Sheffield</span>
         <nav class="main-nav">
           <ul>
             <li><a href="about">About</a></li>
@@ -29,23 +32,40 @@ title: Power Pack
   </div>
 </div>
 
-<form id="place-form">
-    <input type="text" id="place-input">
-</form>
-
 <div id='map'></div>
 
-<div class="container map-find">
+<div class="container">
   <div class="row">
-    <div class="col-8">
-      <div>
-        <h1>Find your local Pack</h1>
-        Enter your postcode
-        <input></input>
-      </div>
+    <div class="col-12">
+      <h2>Upcoming local energy events</h2>
     </div>
   </div>
 </div>
+
+<%= partial("event",
+  locals: {
+    external_url: "https://www.eventbrite.co.uk/e/power-pack-sheffield-trip-to-povey-farm-tickets-33014309689",
+    day: "Wednesday",
+    date: "29th March",
+    time: "11am - 1pm",
+    headline: "Visit a farm powered by renewable energy",
+    short_description: "Meet farmer Stephen Thompson and learn about the wind turbine and solar panels powering his pig farm."
+  })
+%>
+
+<%= partial("event",
+  locals: {
+    external_url: "https://www.eventbrite.co.uk/e/power-pack-sheffield-trip-to-povey-farm-2-tickets-33051136840",
+    day: "Saturday",
+    date: "8th April",
+    time: "2pm - 4pm",
+    headline: "Visit a local wind turbine and solar array",
+    short_description: "Spend an afternoon with Stephen Thompson at Povey Farm. We'll learn about the renewable energy powering his pig farm."
+  })
+%>
+
+
+
 
 <div class="container about">
   <div class="row">
@@ -55,7 +75,6 @@ title: Power Pack
     </div>
   </div>
 </div>
-
 
 <div class="container">
   <div class="row">
@@ -81,14 +100,24 @@ title: Power Pack
       </div>
     </div>
   </div>
+  <div class="row">
+    <div class="col-12 cta">
+      <p>
+        Join Power Pack Sheffield and get more of your electricity from local renewable sources.
+      </p>
+      <p>
+        When it's available, you'll use electricity from local wind turbines and solar panels - at a better price for everyone.
+      </p>
+    </div>
+  </div>
 </div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <h1>Find your local Pack</h1>
-      Enter your postcode
-      <input></input>
+<div class="signup">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <%= partial('partials/signup') %>
+      </div>
     </div>
   </div>
 </div>
@@ -112,7 +141,7 @@ title: Power Pack
       container: 'map', // container id
       style: 'mapbox://styles/mapbox/streets-v9', //stylesheet location
       center: [-1.47, 53.37], // starting position
-      zoom: 8 // starting zoom
+      zoom: 11 // starting zoom
   });
 
   map.scrollZoom.disable();
