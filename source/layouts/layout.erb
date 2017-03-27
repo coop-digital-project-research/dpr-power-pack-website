@@ -41,10 +41,12 @@
           console.log('postcode', postcode);
 
           $.each(place_lookup, function(fragment, dest) {
-            if(postcode.startsWith(fragment)) {
+            if(postcode.toUpperCase().startsWith(fragment)) {
               window.location.href = dest;
+              return;
             }
           });
+
           return false;
         });
       });
