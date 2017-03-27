@@ -1,4 +1,4 @@
 locations:
-  - Liverpool
-  - Manchester
-  - Birmingham
+  - [Liverpool, 53.4084, -2.9916]
+  - [Manchester, 53.4808, -2.2426]
+  - [Birmingham, 52.4862, -1.8904]
