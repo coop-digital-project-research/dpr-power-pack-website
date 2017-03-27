@@ -30,5 +30,25 @@
       ga('send', 'pageview');
 
     </script>
+    <script>
+      var place_lookup = new Object();
+      <% data.places.locations.each do |pack|  %>
+          place_lookup["<%= pack[3] %>"] = "./<%= pack[0] %>.html";
+      <% end %>
+      $(function() {
+        $("#place-form").submit(function() {
+          var postcode = $("#place-input").val();
+          console.log('postcode', postcode);
+
+          $.each(place_lookup, function(fragment, dest) {
+            if(postcode.startsWith(fragment)) {
+              window.location.href = dest;
+            }
+          });
+          return false;
+        });
+      });
+    </script>
+
   </body>
 </html>

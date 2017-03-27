@@ -19,7 +19,7 @@ data.places.locations.each do |pack|
   name = pack[0]
   lat = pack[1]
   lon = pack[2]
-  proxy "/#{name}.html", "/index.html", :locals => { :location_name => name, :lat => lat, :lon => lon }
+  proxy "/#{name}.html", "/placeName.html", :locals => { :location_name => name, :lat => lat, :lon => lon }
 end
 
 # General configuration
