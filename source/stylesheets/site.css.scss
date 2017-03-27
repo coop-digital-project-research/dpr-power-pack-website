@@ -111,6 +111,7 @@ input[type='submit'] {
     font-size: 4em;
     font-weight: normal;
     margin: 0;
+    max-width: 800px;
     @media screen and (max-width: 767px) {
       font-size: 2em;
     }
@@ -292,7 +293,7 @@ div.cta {
     @media screen and (min-width: 768px) {
       background: $white no-repeat url(../images/turbine.svg);
       background-position: right bottom;
-      background-size: 45%;
+      background-size: 35%;
     }
   }
 }
