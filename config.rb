@@ -19,8 +19,11 @@ data.places.locations.each do |pack|
   name = pack[3]
   lat = pack[1]
   lon = pack[2]
-  proxy "/#{name}.html", "/placeName.html", :locals => { :location_name => name, :lat => lat, :lon => lon }
+  proxy "/#{name}.html", "/placeName.html", :locals => { :location_name => name, :lat => lat, :lon => lon }, :ignore => true
 end
+
+ignore "/partials/signup"
+ignore "/partials/footer"
 
 # General configuration
 
