@@ -282,6 +282,26 @@ div.cta {
     span {
     }
   }
+  .input-group {
+    margin-bottom: 2rem;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        input {
+          display: inline;
+          width: auto;
+          margin-right: 1rem;
+        }
+        label {
+          display: inline;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
   h1, h2, span, label, .indicates-required, .indicates-required span {
   }
   h1, h2 {
