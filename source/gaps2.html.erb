@@ -94,14 +94,6 @@ title: Power Pack
   </div>
 </div>
 
-<script>
-  mapboxgl.accessToken = 'pk.eyJ1IjoiaWFuZHJ5c2RhbGUiLCJhIjoiY2owY2xvdWJjMDAxaDMzbXp4cTRtMDY4cyJ9.C-j6LkLP4yyH8OqCieSdfA';
-  var map = new mapboxgl.Map({
-      container: 'map', // container id
-      style: 'mapbox://styles/mapbox/streets-v9', //stylesheet location
-      center: [-1.47, 53.37], // starting position
-      zoom: 8 // starting zoom
-  });
+<%= partial('partials/footer') %>
 
-  map.scrollZoom.disable();
-</script>
+<%= partial('partials/mapbox-default') %>

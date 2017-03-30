@@ -10,15 +10,3 @@
     </div>
   </div>
 </div>
-
-<script>
-  mapboxgl.accessToken = 'pk.eyJ1IjoiaWFuZHJ5c2RhbGUiLCJhIjoiY2owY2xvdWJjMDAxaDMzbXp4cTRtMDY4cyJ9.C-j6LkLP4yyH8OqCieSdfA';
-  var map = new mapboxgl.Map({
-      container: 'map', // container id
-      style: 'mapbox://styles/mapbox/streets-v9', //stylesheet location
-      center: [<%= lon %>, <%= lat %>], // starting position
-      zoom: 11 // starting zoom
-  });
-
-  map.scrollZoom.disable();
-</script>
