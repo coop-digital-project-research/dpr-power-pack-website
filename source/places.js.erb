@@ -1,7 +1,7 @@
 var place_lookup = new Object();
 
 <% data.places.locations.each do |pack|  %>
-    place_lookup["<%= pack[0] %>"] = "./<%= pack[3] %>.html";
+    place_lookup["<%= pack[0] %>"] = "/<%= pack[3] %>.html";
 <% end %>
 
 $(function() {
