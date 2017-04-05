@@ -415,7 +415,7 @@ body {
 
 * {
   font-family: "Quicksand", sans-serif;
-  color: #333447;
+  color: #736F66;
   line-height: 1.5; }
 
 h1, h2, h3 {
@@ -646,13 +646,16 @@ input[type='submit'] {
 
 .header {
   background: #22ADC2;
-  padding: 2em 0; }
+  padding: 1rem 0; }
+  @media screen and (min-width: 768px) {
+    .header {
+      padding: 2rem 0; } }
   .header a {
     text-decoration: none; }
 
 .power-pack-logo {
   vertical-align: bottom;
-  width: 100%; }
+  width: 220px; }
   @media screen and (min-width: 768px) {
     .power-pack-logo {
       width: auto;
@@ -660,13 +663,19 @@ input[type='submit'] {
       margin-right: 0.6rem; } }
 
 .pack-name {
-  font-size: 2.6rem;
   color: #FFFFFF;
-  display: inline; }
+  display: inline;
+  font-size: 1.6rem; }
+  @media screen and (min-width: 768px) {
+    .pack-name {
+      font-size: 2.6rem; } }
 
 .strapline {
   background: #1a8697;
-  padding: 2em 0; }
+  padding: 1rem 0; }
+  @media screen and (min-width: 768px) {
+    .strapline {
+      padding: 2rem 0; } }
   .strapline h2 {
     color: #FFFFFF;
     font-size: 4em;
@@ -675,7 +684,8 @@ input[type='submit'] {
     max-width: 800px; }
     @media screen and (max-width: 767px) {
       .strapline h2 {
-        font-size: 2em; } }
+        font-size: 2em;
+        margin-bottom: 0.6rem; } }
   .strapline p {
     color: #FFFFFF;
     font-size: 2.4em;
@@ -699,9 +709,9 @@ input[type='submit'] {
   height: 200px; }
   @media screen and (min-width: 768px) {
     #map {
-      height: 300px; }
-      #map.map-large {
-        height: 500px; } }
+      height: 300px; } }
+  #map.map-large {
+    height: 500px; }
 
 .map-find {
   box-sizing: border-box;
@@ -720,13 +730,14 @@ input[type='submit'] {
   .map-find > div > div > div {
     margin-top: 50px;
     background: #FFFFFF;
-    border-radius: 0.2rem; }
+    border-radius: 0.2rem;
+    padding: 1rem; }
     .map-find > div > div > div h1 {
       color: #736F66; }
     @media screen and (min-width: 768px) {
       .map-find > div > div > div {
-        box-sizing: border-box;
-        padding: 2rem; } }
+        padding: 2rem;
+        box-sizing: border-box; } }
     .map-find > div > div > div h1 {
       margin-top: 0; }
 
@@ -836,11 +847,17 @@ div.cta p {
     .footer p a {
       color: inherit; }
   .footer img {
-    width: 48px;
-    float: right; }
+    width: 48px; }
+    @media screen and (min-width: 768px) {
+      .footer img {
+        float: right; } }
 
-div.about {
-  margin-top: 4em; }
+@media screen and (min-width: 768px) {
+  div.about {
+    margin-top: 4rem; } }
+
+.transactional {
+  margin-bottom: 4rem; }
 
 img.team-face-image {
   min-width: 150px;

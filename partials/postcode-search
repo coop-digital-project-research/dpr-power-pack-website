@@ -1,0 +1,6 @@
+<h1>Find your local Pack</h1>
+<form id="place-form">
+  <label for="place-input">Enter your postcode</label>
+  <input type="text" id="place-input">
+  <input type="submit" class="button" value="Go">
+</form>
