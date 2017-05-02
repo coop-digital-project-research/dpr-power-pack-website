@@ -177,7 +177,7 @@ input[type='submit'] {
   > div > div > div {
     h1 {
       color: $dark-grey;
-      
+
     }
     margin-top: 50px;
     background: $white;
@@ -243,7 +243,18 @@ p {
   margin-bottom: 1em;
 }
 
-p, h2, h3, h4, strong {
+ul {
+  li {
+    font-weight: 200;
+    font-size: 1.5em;
+    @media screen and (max-width: 767px) {
+      font-size: 1.25em;
+    }
+  }
+  margin-bottom: 1em;
+}
+
+p, h2, h3, h4, strong, li {
   color: $dark-grey;
 }
 
@@ -318,7 +329,7 @@ div.cta {
   h1, h2 {
     margin-top: 0;
   }
-  
+
   .container {
     padding: 4rem 0;
     @media screen and (min-width: 768px) {
@@ -350,6 +361,7 @@ div.cta {
 div.about {
   @media screen and (min-width: 768px) {
     margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 }
 
