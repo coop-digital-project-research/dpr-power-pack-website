@@ -704,6 +704,18 @@ input[type='submit'] {
   position: absolute;
   width: 1px; }
 
+.background-photo {
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media screen and (min-width: 768px) {
+    .background-photo {
+      height: 300px; } }
+
 #map {
   width: 100%;
   height: 200px; }
@@ -777,7 +789,16 @@ p {
     p {
       font-size: 1.25em; } }
 
-p, h2, h3, h4, strong {
+ul {
+  margin-bottom: 1em; }
+  ul li {
+    font-weight: 200;
+    font-size: 1.5em; }
+    @media screen and (max-width: 767px) {
+      ul li {
+        font-size: 1.25em; } }
+
+p, h2, h3, h4, strong, li {
   color: #736F66; }
 
 .event {
@@ -854,7 +875,8 @@ div.cta p {
 
 @media screen and (min-width: 768px) {
   div.about {
-    margin-top: 4rem; } }
+    margin-top: 4rem;
+    margin-bottom: 4rem; } }
 
 .transactional {
   margin-bottom: 4rem; }
