@@ -8,38 +8,6 @@ $light-grey: #F3F3F3;
 $dark-grey: #736F66;
 $white: #FFFFFF;
 
-nav.main-nav {
-  ul {
-    padding: 0;
-    margin: 0;
-    li {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: inline-block;
-      a {
-        color: $white;
-        text-decoration: none;
-        padding: 0.4rem 0.6rem;
-        background: darken($blue, 10);
-        border-radius: 0.2rem;
-        &:hover {
-          background: darken($blue, 20);
-        }
-      }
-    }
-  }
-  margin-top: 1rem;
-  @media screen and (min-width: 980px) {
-    margin-top: 0;
-    float: right;
-    height: 4.5rem;
-    ul {
-      line-height: 4.5;
-    }
-  }
-}
-
 h1, h2 {
   line-height: 1.2;
 }
@@ -82,32 +50,80 @@ input[type='submit'] {
 
 .header {
   background: $blue;
-  padding: 1rem 0;
-  @media screen and (min-width: 768px) {
-    padding: 2rem 0;
+
+  .row > .col-12 {
+    margin: 1rem 2%;
+    @media screen and (min-width: 1030px) {
+      margin: 0 2%;
+      height: 120px;
+    }
+    > a {
+      @media screen and (min-width: 1030px) {
+        vertical-align: middle;
+        display: inline-block;
+        text-decoration: none;
+      }
+    }
   }
-  a {
-    text-decoration: none;
+
+
+  img.power-pack-logo {
+    width: 158px;
+    @media screen and (min-width: 1030px) {
+      width: 221px;
+      height: 114px;
+    }
   }
-}
-.power-pack-logo {
-  vertical-align: bottom;
-  width: 220px;
-  @media screen and (min-width: 768px) {
-    width: auto;
-    height: 4rem;
-    margin-right: 0.6rem;
+
+  .pack-name {
+    color: rgba($white,0.8);
+    display: block;
+    font-size: 24px;
+    @media screen and (min-width: 1030px) {
+      display: inline;
+      font-size: 36px;
+      margin-left: 1rem;
+      line-height: 2;
+      vertical-align: middle;
+      height: 78px;
+      display: inline-block;
+    }
   }
+
+  nav.main-nav {
+    height: 100%;
+    ul {
+      padding: 0;
+      margin: 0;
+      li {
+        list-style: none;
+        padding: 0;
+        margin: 0 1rem 0 0;
+        display: inline-block;
+        a {
+          color: $white;
+          font-size: 18px;
+          text-decoration: underline;
+          font-weight: bolder;
+        }
+      }
+    }
+    @media screen and (min-width: 1030px) {
+      float: right;
+      ul {
+        line-height: 120px;
+        li {
+          margin: 0 0 0 1.2rem;
+          a {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+  
 }
 
-.pack-name {
-  color: $white;
-  display: inline;
-  font-size: 1.6rem;
-  @media screen and (min-width: 768px) {
-    font-size: 2.6rem;
-  }
-}
 
 .strapline {
   background: darken($blue, 10);
