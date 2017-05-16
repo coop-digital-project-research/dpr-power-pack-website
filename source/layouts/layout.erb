@@ -20,6 +20,15 @@
   </head>
 
   <body class="<%= page_classes %>">
+    <nav id="global-nav">
+      <div class="container">
+        <ul>
+          <li>Pack Finder</li>
+          <li><a href="http://blog.powerpack.org.uk/">Blog</a></li>
+          <li><a href="https://almanac.powerpack.org.uk/">Almanac</a></li>
+        </ul>
+      </div>
+    </nav>
     <%= yield %>
     <%= partial('partials/analytics') %>
     <%= partial('partials/intercom') %>
