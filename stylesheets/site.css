@@ -584,32 +584,6 @@ p {
 
   .hidden-sm {
     display: block; } }
-nav.main-nav {
-  margin-top: 1rem; }
-  nav.main-nav ul {
-    padding: 0;
-    margin: 0; }
-    nav.main-nav ul li {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: inline-block; }
-      nav.main-nav ul li a {
-        color: #FFFFFF;
-        text-decoration: none;
-        padding: 0.4rem 0.6rem;
-        background: #1a8697;
-        border-radius: 0.2rem; }
-        nav.main-nav ul li a:hover {
-          background: #13606b; }
-  @media screen and (min-width: 980px) {
-    nav.main-nav {
-      margin-top: 0;
-      float: right;
-      height: 4.5rem; }
-      nav.main-nav ul {
-        line-height: 4.5; } }
-
 h1, h2 {
   line-height: 1.2; }
 
@@ -645,30 +619,61 @@ input[type='submit'] {
     background: #f02c83; }
 
 .header {
-  background: #22ADC2;
-  padding: 1rem 0; }
-  @media screen and (min-width: 768px) {
-    .header {
-      padding: 2rem 0; } }
-  .header a {
-    text-decoration: none; }
-
-.power-pack-logo {
-  vertical-align: bottom;
-  width: 220px; }
-  @media screen and (min-width: 768px) {
-    .power-pack-logo {
-      width: auto;
-      height: 4rem;
-      margin-right: 0.6rem; } }
-
-.pack-name {
-  color: #FFFFFF;
-  display: inline;
-  font-size: 1.6rem; }
-  @media screen and (min-width: 768px) {
-    .pack-name {
-      font-size: 2.6rem; } }
+  background: #22ADC2; }
+  .header .row > .col-12 {
+    margin: 1rem 2%; }
+    @media screen and (min-width: 1030px) {
+      .header .row > .col-12 {
+        margin: 0 2%;
+        height: 120px; } }
+    @media screen and (min-width: 1030px) {
+      .header .row > .col-12 > a {
+        vertical-align: middle;
+        display: inline-block;
+        text-decoration: none; } }
+  .header img.power-pack-logo {
+    width: 158px; }
+    @media screen and (min-width: 1030px) {
+      .header img.power-pack-logo {
+        width: 221px;
+        height: 114px; } }
+  .header .pack-name {
+    color: rgba(255, 255, 255, 0.8);
+    display: block;
+    font-size: 24px; }
+    @media screen and (min-width: 1030px) {
+      .header .pack-name {
+        display: inline;
+        font-size: 36px;
+        margin-left: 1rem;
+        line-height: 2;
+        vertical-align: middle;
+        height: 78px;
+        display: inline-block; } }
+  .header nav.main-nav {
+    height: 100%; }
+    .header nav.main-nav ul {
+      padding: 0;
+      margin: 0; }
+      .header nav.main-nav ul li {
+        list-style: none;
+        padding: 0;
+        margin: 0 1rem 0 0;
+        display: inline-block; }
+        .header nav.main-nav ul li a {
+          color: #FFFFFF;
+          font-size: 18px;
+          text-decoration: underline;
+          font-weight: bolder; }
+    @media screen and (min-width: 1030px) {
+      .header nav.main-nav {
+        float: right; }
+        .header nav.main-nav ul {
+          line-height: 120px; }
+          .header nav.main-nav ul li {
+            margin: 0 0 0 1.2rem; }
+            .header nav.main-nav ul li a {
+              font-size: 24px; } }
 
 .strapline {
   background: #1a8697;
