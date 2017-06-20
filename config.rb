@@ -26,6 +26,7 @@ ignore "/partials/signup"
 ignore "/partials/footer"
 ignore "/partials/mapbox-variable"
 ignore "/partials/signup-variable"
+ignore "/placeName.html"
 
 # General configuration
 
