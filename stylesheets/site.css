@@ -618,6 +618,28 @@ input[type='submit'] {
   input[type='submit']:hover {
     background: #f02c83; }
 
+nav#global-nav {
+  background: #736F66;
+  height: 40px; }
+  nav#global-nav ul {
+    list-style: none;
+    margin: 0 2%;
+    padding: 0; }
+    nav#global-nav ul li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: inline-block;
+      color: #FFFFFF;
+      height: 40px;
+      line-height: 40px;
+      font-size: 14px;
+      margin-right: 1rem;
+      font-weight: 500; }
+      nav#global-nav ul li a {
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: 400; }
+
 .header {
   background: #22ADC2; }
   .header .row > .col-12 {
@@ -719,7 +741,7 @@ input[type='submit'] {
   background-size: cover; }
   @media screen and (min-width: 768px) {
     .background-photo {
-      height: 300px; } }
+      height: 500px; } }
 
 #map {
   width: 100%;
